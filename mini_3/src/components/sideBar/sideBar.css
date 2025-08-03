@@ -1,0 +1,85 @@
+/* sideBar.css */
+
+.sidebar {
+  width: 250px; /* Sidebar width */
+  background-color: #333; /* Dark background color */
+  color: white; /* Text color */
+  position: fixed; /* Fix the sidebar on the left */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  padding-top: 20px; /* Top padding for spacing */
+  z-index: 1000; /* Ensure sidebar stays on top */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for sidebar toggling */
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin: 20px 0;
+}
+
+.sidebar-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #f0a500; /* Highlight color on hover */
+  color: #333; /* Dark text color on hover */
+  border-radius: 5px; /* Slight rounding of the corners */
+}
+
+.side-logout {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-align: left; /* Align text to the left */
+  margin: 10px 15px; /* Margin to the left for proper spacing */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.side-logout:hover {
+  background-color: #f0a500; /* Highlight color on hover */
+  color: #333; /* Dark text color on hover */
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Auto height to fit content */
+    position: relative; /* Relative positioning for small screens */
+  }
+
+  .sidebar-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .sidebar-menu li a {
+    font-size: 1rem; /* Smaller font size on mobile */
+  }
+
+  .side-logout {
+    font-size: 1rem; /* Smaller font size for mobile */
+    padding: 10px 15px;
+  }
+}

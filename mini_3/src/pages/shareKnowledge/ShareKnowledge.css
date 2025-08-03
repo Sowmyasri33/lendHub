@@ -1,0 +1,137 @@
+/* ShareKnowledge.css */
+.share-knowledge {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f7fa;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.upload-history-title {
+  margin-top: 90px;
+  font-size: 2rem;
+  color: #2b2d42;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar-container {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: #e63946;
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.no-videos {
+  color: #2b2d42;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.upload-history-group {
+  width: 100%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.upload-history-task {
+  font-size: 1.5rem;
+  color: #1d3557;
+  margin-bottom: 15px;
+}
+
+.upload-history-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.upload-history-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
+
+.upload-history-item:hover {
+  background-color: #f1f1f1;
+}
+
+.upload-history-video-title {
+  font-size: 1.2rem;
+  color: #1d3557;
+  margin-bottom: 10px;
+}
+
+.upload-history-video-description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.upload-history-video {
+  width: 100%;
+  max-width: 1300px; /* Increased from 700px to 1300px */
+  border-radius: 6px;
+  background-color: #e9ecef;
+}
+
+
+@media (max-width: 768px) {
+  .upload-history-title {
+    font-size: 1.8rem;
+  }
+
+  .upload-history-group {
+    padding: 15px;
+  }
+
+  .upload-history-task {
+    font-size: 1.25rem;
+  }
+
+  .upload-history-video-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 10px;
+  }
+
+  .upload-history-title {
+    font-size: 1.5rem;
+  }
+
+  .upload-history-item {
+    padding: 10px;
+  }
+
+  .upload-history-video-title {
+    font-size: 1rem;
+  }
+
+  .upload-history-video {
+    max-width: 100%;
+  }
+}

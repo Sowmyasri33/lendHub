@@ -1,0 +1,105 @@
+.file-upload {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+  min-height: 700px; /* Increase this value as needed */
+}
+
+
+.file-upload h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.file-upload-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.radio-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.conditional-fields {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.sell-fields,
+.rent-fields {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 200px;
+}
+
+.sell-fields label,
+.rent-fields label {
+  margin-bottom: 8px;
+   display: block;
+  width: 100%;
+}
+
+.file-upload-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.file-upload-button:hover {
+  background-color: #0056b3;
+}
